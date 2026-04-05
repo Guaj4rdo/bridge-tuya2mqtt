@@ -182,13 +182,22 @@ sudo systemctl enable --now tuya-bridge
 journalctl -u tuya-bridge -f
 ```
 
-### Comandos utiles de systemd
+### Comandos utiles
 
 ```bash
 sudo systemctl status tuya-bridge    # Ver estado
 sudo systemctl restart tuya-bridge   # Reiniciar
 sudo systemctl stop tuya-bridge      # Detener
 journalctl -u tuya-bridge -n 50      # Ultimas 50 lineas de log
+```
+
+### Actualizar
+
+```bash
+cd /opt/tuya-bridge
+# Copiar archivos nuevos, luego:
+venv/bin/pip install .
+sudo systemctl restart tuya-bridge
 ```
 
 ## Estructura del proyecto
