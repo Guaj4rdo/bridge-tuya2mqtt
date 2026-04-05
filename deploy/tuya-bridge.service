@@ -1,0 +1,14 @@
+[Unit]
+Description=Tuya Bridge - MQTT bridge for Tuya smart devices
+After=network.target mosquitto.service
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/opt/tuya-bridge
+ExecStart=/opt/tuya-bridge/venv/bin/python -m tuya_bridge --config /opt/tuya-bridge/config.yaml
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+device:
+  id: "DEVICE_ID_HERE"
+  ip: "192.168.1.100"
+  local_key: "LOCAL_KEY_HERE"
+  protocol: "3.3"
+  relay_dp: "1"
+  poll_interval: 3s
+  heartbeat_interval: 15s
+
+mqtt:
+  host: "localhost"
+  port: 1883
+  client_id: "tuya-bridge"
+  base_topic: "tuya"
+  username: ""
+  password: ""
+  reconnect_delay: 5s
+
+verbose: false

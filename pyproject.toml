@@ -1,0 +1,20 @@
+[project]
+name = "tuya-bridge"
+version = "1.0.0"
+description = "Bridge between Tuya smart devices and MQTT"
+requires-python = ">=3.9"
+dependencies = [
+    "tinytuya>=1.13.0",
+    "paho-mqtt>=2.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+tuya-bridge = "tuya_bridge.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["tuya_bridge*"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

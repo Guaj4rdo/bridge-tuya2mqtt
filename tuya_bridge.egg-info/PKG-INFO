@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: tuya-bridge
+Version: 1.0.0
+Summary: Bridge between Tuya smart devices and MQTT
+Requires-Python: >=3.9
+Requires-Dist: tinytuya>=1.13.0
+Requires-Dist: paho-mqtt>=2.0.0
+Requires-Dist: PyYAML>=6.0

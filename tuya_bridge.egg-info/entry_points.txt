@@ -1,0 +1,2 @@
+[console_scripts]
+tuya-bridge = tuya_bridge.__main__:main
