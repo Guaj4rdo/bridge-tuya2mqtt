@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+venv/
+
+config.yaml
+tinytuya.json
+tuya-raw.json
+devices.json
+snapshot.json

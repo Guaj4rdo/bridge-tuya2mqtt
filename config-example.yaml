@@ -1,7 +1,7 @@
 device:
-  id: "eb38b8968772c7ac2b7lbb"
-  ip: "192.168.100.151"
-  local_key: "UMv<:8xq[|_8rj[h"
+  id: "DEVICE_ID_HERE"
+  ip: "192.168.1.100"
+  local_key: "LOCAL_KEY_HERE"
   protocol: "3.4"
   relay_dp: "1"
   poll_interval: 3s
@@ -12,8 +12,8 @@ mqtt:
   port: 1883
   client_id: "tuya-bridge"
   base_topic: "tuya"
-  username: "zet799"
-  password: ".Sebadragon1"
+  username: ""
+  password: ""
   reconnect_delay: 5s
 
 verbose: false
